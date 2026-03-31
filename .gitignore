@@ -1,0 +1,25 @@
+# Build outputs
+*.exe
+*.out
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.lib
+*.dll
+
+# IDE files
+.vscode/
+.vs/
+*.user
+
+# Common build folders
+Debug/
+Release/
+x64/
+
+# Dataset files
+images/
+*.idx3-ubyte
+*.idx1-ubyte
