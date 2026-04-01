@@ -65,19 +65,7 @@ MNIST C++/
 - `t10k-images.idx3-ubyte`
 - `t10k-labels.idx1-ubyte`
 
-目录示例：
-
-```text
-images/
-├── train-images.idx3-ubyte
-├── train-labels.idx1-ubyte
-├── t10k-images.idx3-ubyte
-└── t10k-labels.idx1-ubyte
-```
-
 ## 编译方法
-
-### 方式一：使用 g++ / MinGW
 
 在项目根目录下执行：
 
@@ -92,25 +80,6 @@ g++ -std=c++17 -O2 -Wall -Wextra main.cpp mnist_reader.cpp network.cpp trainer.c
 - `-O3` 中的 `O` 是**大写字母 O**，不是数字 `0`，也不是小写字母 `o`
 - 如果你使用的是 **MSVC**，应使用 `/O2`，而不是 `-O3`
 
-### 方式二：使用 MSVC
-
-在 Developer Command Prompt 中执行：
-
-```bash
-cl /EHsc /std:c++17 /O2 main.cpp mnist_reader.cpp network.cpp trainer.cpp evaluator.cpp math_utils.cpp /Fe:main.exe
-```
-
-## 运行方式
-
-程序支持 5 种模式。
-
-### 交互方式运行
-
-```bash
-.\main.exe
-```
-
-运行后根据提示输入模式编号和数据集路径。
 
 ### 模式说明
 
